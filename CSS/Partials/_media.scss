@@ -1,0 +1,286 @@
+@media (max-width: 1259px) {
+
+    .main-header {
+        width: 970px;
+    }
+
+    .nav-bar {
+        .nav-container {
+            .nav-item {
+                width: 157px;
+            }
+
+            .nav-btn {
+                width: 157px;
+            }
+            .nav-sub-menu {
+                font-size: 0.8125rem;
+                li {
+                    &:nth-of-type(n+2)::before {
+                        content: "-";
+                        padding-right: 20px;
+                        padding-left: 20px;
+                      }
+                }
+                
+            }
+        }
+    }
+
+    .banner-container {
+        .banner-item {
+            width: 970px;
+        }
+    }
+
+    .service-list-section {
+        .service-list-container {
+            width: 970px;
+
+            .service-list-shell2 {
+                width: 50%;
+            }
+        }
+    }
+
+    .profile-outer {
+        .profile-container {
+            width: 970px;
+            padding: 0 15px;
+
+            .profile-item {
+                width: 100%;
+                margin: auto;
+            }
+        }
+    }
+
+    .latest-heading-outer {
+        .latest-heading {
+            width: 970px;
+        }
+    }
+
+    .latest-outer {
+        .latest-container {
+            width: 970px;
+
+            .card {
+                width: 50%;
+            }
+
+            .card-3 {
+                display: none;
+            }
+        }
+    }
+
+    .clients-container {
+        width: 940px;
+
+        .clients-item {
+            img {
+                height: auto;
+                width: 100%;
+            }
+        }
+
+    }
+
+    .main-footer {
+        .footer-container {
+            width: 970px;
+
+            .footer-item {
+                width: 50%;
+            }
+            .top-footer-item {
+                margin-bottom: 30px;
+            }
+        }
+    }
+
+
+    .accred-container {
+        width: 970px;
+
+        .accred-item {
+            img {
+                height: auto;
+                width: 100%;
+
+            }
+        }
+    }
+
+}
+
+
+@media (max-width: 991px) {
+
+    .main-header {
+        width: 750px;
+
+        .actions {
+            .support-btn {
+                display: none;
+            }
+
+            .contact-btn {
+                display: none;
+            }
+        }
+    }
+
+    .nav-bar {
+        display: none;
+    }
+
+    .banner-container {
+        height: calc(100vh - 96px);
+        .banner-item {
+            width: 750px;
+            text-align: center;
+        }
+    }
+
+    .service-list-section {
+        .service-list-container {
+            width: 750px;
+
+            .service-list-shell2 {
+                width: 50%;
+            }
+        }
+    }
+
+    .profile-outer {
+        .profile-container {
+            width: 750px;
+        }
+    }
+
+    .latest-heading-outer {
+        .latest-heading {
+            width: 750px;
+        }
+    }
+
+    .latest-outer {
+        .latest-container {
+            width: 750px;
+        }
+    }
+
+    .clients-container {
+        width: 720px;
+
+        .clients-item {
+            img {
+                height: auto;
+                width: 100%;
+            }
+        }
+
+    }
+
+    .main-footer {
+        .footer-container {
+            width: 750px;
+        }
+    }
+
+
+    .accred-container {
+        width: 750px;
+
+        .accred-item {
+            img {
+            height: auto;
+            width: 100%;
+
+            }
+        }
+    }
+
+
+}
+
+
+@media (max-width: 767px) {
+
+    .main-header {
+        width: 100%;
+
+        .actions {
+            .phone-call-btn {
+                display: inline-block;
+            }
+
+        }
+    }
+
+    .banner-container {
+        height: calc(100vh - 96px);
+    }
+
+    .service-list-section {
+        .service-list-container {
+            width: 100%;
+
+            .service-list-shell1 {
+                width: 100%;
+            }
+
+            .service-list-shell2 {
+                width: 100%;
+            }
+        }
+    }
+
+    .profile-outer {
+        .profile-container {
+            width: 100%;
+
+            .profile-item {
+                width: 100%;
+                margin: auto;
+            }
+        }
+    }
+
+    .latest-heading-outer {
+        .latest-heading {
+            width: 100%;
+        }
+    }
+
+    .latest-outer {
+        .latest-container {
+            width: 100%;
+            flex-flow: wrap;
+
+            .card {
+                width: 100%;
+            }
+        }
+    }
+
+    .clients-container {
+        display: none;
+    }
+
+    .main-footer {
+        .footer-container {
+            width: 100%;
+
+            .footer-item {
+                width: 100%;
+            }
+        }
+    }
+
+    .accred-container {
+        display: none;
+    }
+}
