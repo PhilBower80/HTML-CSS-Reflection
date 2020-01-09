@@ -12,6 +12,10 @@ html {
   box-sizing: inherit;
 }
 
+p { 
+  font-size: 0.8125rem; 
+  line-height: 1.375rem; 
+}  
 
 // HEADER 
 
@@ -162,6 +166,7 @@ html {
 
     .nav-sub-menu {
       position: absolute;
+      top: 100%;
       left: -1px;
       right: -1px;
       list-style-type: none;
@@ -170,18 +175,21 @@ html {
       text-transform: uppercase;
       font-size: 1rem;
       line-height: 2.813rem;
-      // width: calc(100vw - (100vw - 100%));
-
 
       li {
         display: inline-block;
 
-        &:nth-of-type(n+2)::before {
+        // &:nth-of-type(n+2)::before {                /* this code has now been replaced with new snippet below, further to comments from Kayleigh */
+        //   content: "-";
+        //   padding-right: 35px;
+        //   padding-left: 35px;
+        // }
+      }
+      li + li::before {
           content: "-";
           padding-right: 35px;
           padding-left: 35px;
         }
-      }
     }
 
     .nsm-web-design {
@@ -385,6 +393,10 @@ html {
   a:link {
     text-decoration: none;
   }
+  
+  a:visited {
+    color: $nm-bg;
+  }
 
   .service-list-container {
     display: flex;
@@ -397,7 +409,7 @@ html {
       padding: 0 15px;
       width: 50%;
 
-      .service-list-item1 {
+      .service-list-item {
         display: block;
         margin-top: 30px;
         padding: 30px;
@@ -656,6 +668,7 @@ html {
       }
 
       p {
+        font-size: 1rem;
         line-height: 1.875rem;
         margin-bottom: 25px;
         color: #fff;
@@ -915,7 +928,7 @@ html {
 
 // CLIENT TOOLTIPS
 
-.tooltip {
+.tooltipArrow {
   position: relative;
 
   &::before {
@@ -976,8 +989,8 @@ html {
 
     p {
       margin: 0 0 10px;
-      font-size: 0.8125rem;
-      line-height: 1.375rem;
+      // font-size: 0.8125rem;    /* this is now styled by a base style at top */
+      // line-height: 1.375rem;
     }
   }
 }
