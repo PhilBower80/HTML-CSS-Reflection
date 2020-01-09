@@ -391,7 +391,7 @@ p {
   color: #333645;
 }
 
-.service-list-section .service-list-container {
+.service-list-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -404,116 +404,17 @@ p {
           justify-content: center;
 }
 
-.service-list-section .service-list-container .service-list-shell1 {
+.service-list-shell1 {
   padding: 0 15px;
   width: 50%;
 }
 
-.service-list-section .service-list-container .service-list-shell1 .service-list-item {
-  display: block;
-  margin-top: 30px;
-  padding: 30px;
-  border: 1px solid #ccc;
-  border-radius: 3px;
-  -webkit-box-shadow: 0 3px 35px rgba(0, 0, 0, 0.1);
-          box-shadow: 0 3px 35px rgba(0, 0, 0, 0.1);
-  text-align: center;
-}
-
-.service-list-section .service-list-container .service-list-shell1 .service-list-item .sl-icon {
-  display: block;
-  height: 60px;
-  width: 60px;
-  line-height: 60px;
-  border-radius: 50%;
-  margin: auto;
-  margin-bottom: 17px;
-}
-
-.service-list-section .service-list-container .service-list-shell1 .service-list-item .web-design-icon,
-.service-list-section .service-list-container .service-list-shell1 .service-list-item .web-design-button {
-  color: #fff;
-  background-color: #926fb1;
-}
-
-.service-list-section .service-list-container .service-list-shell1 .service-list-item .it-support-icon,
-.service-list-section .service-list-container .service-list-shell1 .service-list-item .it-support-button {
-  color: #fff;
-  background-color: #4183d7;
-}
-
-.service-list-section .service-list-container .service-list-shell1 .service-list-item .sl-title {
-  display: block;
-  position: relative;
-  margin-bottom: 11px;
-  padding-bottom: 17px;
-  font-size: 1.125rem;
-}
-
-.service-list-section .service-list-container .service-list-shell1 .service-list-item .sl-title::after {
-  content: "";
-  display: block;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
-  width: 28px;
-  height: 3px;
-  display: block;
-  background-color: #333645;
-}
-
-.service-list-section .service-list-container .service-list-shell1 .service-list-item .sl-summary {
-  display: block;
-  margin-bottom: 13px;
-  font-size: 0.8125rem;
-  line-height: 1.375rem;
-}
-
-.service-list-section .service-list-container .service-list-shell1 .service-list-item .sl-button {
-  display: block;
-  display: inline-block;
-  height: auto;
-  line-height: 35px;
-  padding: 5px 15px;
-  text-transform: uppercase;
-  font-size: 1.063rem;
-  border-radius: 3px;
-  margin: 0;
-  text-decoration: none;
-}
-
-.service-list-section .service-list-container .service-list-shell1 .sl-web-design:hover {
-  color: #fff;
-  background-color: #926fb1;
-}
-
-.service-list-section .service-list-container .service-list-shell1 .sl-web-design:hover .sl-icon,
-.service-list-section .service-list-container .service-list-shell1 .sl-web-design:hover .sl-title::after,
-.service-list-section .service-list-container .service-list-shell1 .sl-web-design:hover .sl-button {
-  color: #926fb1;
-  background-color: #fff;
-}
-
-.service-list-section .service-list-container .service-list-shell1 .sl-it-support:hover {
-  color: #fff;
-  background-color: #4183d7;
-}
-
-.service-list-section .service-list-container .service-list-shell1 .sl-it-support:hover .sl-icon,
-.service-list-section .service-list-container .service-list-shell1 .sl-it-support:hover .sl-title::after,
-.service-list-section .service-list-container .service-list-shell1 .sl-it-support:hover .sl-button {
-  color: #4183d7;
-  background-color: #fff;
-}
-
-.service-list-section .service-list-container .service-list-shell2 {
+.service-list-shell2 {
   padding: 0 15px;
   width: 25%;
 }
 
-.service-list-section .service-list-container .service-list-shell2 .service-list-item2 {
+.service-list-item {
   display: block;
   margin-top: 30px;
   padding: 30px;
@@ -524,7 +425,7 @@ p {
   text-align: center;
 }
 
-.service-list-section .service-list-container .service-list-shell2 .service-list-item2 .sl-icon {
+.service-list-item .sl-icon {
   display: block;
   height: 60px;
   width: 60px;
@@ -534,31 +435,19 @@ p {
   margin-bottom: 17px;
 }
 
-.service-list-section .service-list-container .service-list-shell2 .service-list-item2 .telecom-services-icon,
-.service-list-section .service-list-container .service-list-shell2 .service-list-item2 .telecom-services-button {
+.service-list-item .web-design-icon,
+.service-list-item .web-design-button {
   color: #fff;
-  background-color: #d64541;
+  background-color: #926fb1;
 }
 
-.service-list-section .service-list-container .service-list-shell2 .service-list-item2 .bespoke-software-icon,
-.service-list-section .service-list-container .service-list-shell2 .service-list-item2 .bespoke-software-button {
+.service-list-item .it-support-icon,
+.service-list-item .it-support-button {
   color: #fff;
-  background-color: #67809f;
+  background-color: #4183d7;
 }
 
-.service-list-section .service-list-container .service-list-shell2 .service-list-item2 .digital-marketing-icon,
-.service-list-section .service-list-container .service-list-shell2 .service-list-item2 .digital-marketing-button {
-  color: #fff;
-  background-color: #2ecc71;
-}
-
-.service-list-section .service-list-container .service-list-shell2 .service-list-item2 .cyber-security-icon,
-.service-list-section .service-list-container .service-list-shell2 .service-list-item2 .cyber-security-button {
-  color: #fff;
-  background-color: #f62459;
-}
-
-.service-list-section .service-list-container .service-list-shell2 .service-list-item2 .sl-title {
+.service-list-item .sl-title {
   display: block;
   position: relative;
   margin-bottom: 11px;
@@ -566,7 +455,7 @@ p {
   font-size: 1.125rem;
 }
 
-.service-list-section .service-list-container .service-list-shell2 .service-list-item2 .sl-title::after {
+.service-list-item .sl-title::after {
   content: "";
   display: block;
   position: absolute;
@@ -580,14 +469,14 @@ p {
   background-color: #333645;
 }
 
-.service-list-section .service-list-container .service-list-shell2 .service-list-item2 .sl-summary {
+.service-list-item .sl-summary {
   display: block;
   margin-bottom: 13px;
   font-size: 0.8125rem;
   line-height: 1.375rem;
 }
 
-.service-list-section .service-list-container .service-list-shell2 .service-list-item2 .sl-button {
+.service-list-item .sl-button {
   display: block;
   display: inline-block;
   height: auto;
@@ -600,50 +489,98 @@ p {
   text-decoration: none;
 }
 
-.service-list-section .service-list-container .service-list-shell2 .sl-telecom-services:hover {
+.service-list-item .telecom-services-icon,
+.service-list-item .telecom-services-button {
   color: #fff;
   background-color: #d64541;
 }
 
-.service-list-section .service-list-container .service-list-shell2 .sl-telecom-services:hover .sl-icon,
-.service-list-section .service-list-container .service-list-shell2 .sl-telecom-services:hover .sl-title::after,
-.service-list-section .service-list-container .service-list-shell2 .sl-telecom-services:hover .sl-button {
-  color: #d64541;
-  background-color: #fff;
-}
-
-.service-list-section .service-list-container .service-list-shell2 .sl-bespoke-software:hover {
+.service-list-item .bespoke-software-icon,
+.service-list-item .bespoke-software-button {
   color: #fff;
   background-color: #67809f;
 }
 
-.service-list-section .service-list-container .service-list-shell2 .sl-bespoke-software:hover .sl-icon,
-.service-list-section .service-list-container .service-list-shell2 .sl-bespoke-software:hover .sl-title::after,
-.service-list-section .service-list-container .service-list-shell2 .sl-bespoke-software:hover .sl-button {
-  color: #67809f;
-  background-color: #fff;
-}
-
-.service-list-section .service-list-container .service-list-shell2 .sl-digital-marketing:hover {
+.service-list-item .digital-marketing-icon,
+.service-list-item .digital-marketing-button {
   color: #fff;
   background-color: #2ecc71;
 }
 
-.service-list-section .service-list-container .service-list-shell2 .sl-digital-marketing:hover .sl-icon,
-.service-list-section .service-list-container .service-list-shell2 .sl-digital-marketing:hover .sl-title::after,
-.service-list-section .service-list-container .service-list-shell2 .sl-digital-marketing:hover .sl-button {
-  color: #2ecc71;
-  background-color: #fff;
-}
-
-.service-list-section .service-list-container .service-list-shell2 .sl-cyber-security:hover {
+.service-list-item .cyber-security-icon,
+.service-list-item .cyber-security-button {
   color: #fff;
   background-color: #f62459;
 }
 
-.service-list-section .service-list-container .service-list-shell2 .sl-cyber-security:hover .sl-icon,
-.service-list-section .service-list-container .service-list-shell2 .sl-cyber-security:hover .sl-title::after,
-.service-list-section .service-list-container .service-list-shell2 .sl-cyber-security:hover .sl-button {
+.sl-web-design:hover {
+  color: #fff;
+  background-color: #926fb1;
+}
+
+.sl-web-design:hover .sl-icon,
+.sl-web-design:hover .sl-title::after,
+.sl-web-design:hover .sl-button {
+  color: #926fb1;
+  background-color: #fff;
+}
+
+.sl-it-support:hover {
+  color: #fff;
+  background-color: #4183d7;
+}
+
+.sl-it-support:hover .sl-icon,
+.sl-it-support:hover .sl-title::after,
+.sl-it-support:hover .sl-button {
+  color: #4183d7;
+  background-color: #fff;
+}
+
+.sl-telecom-services:hover {
+  color: #fff;
+  background-color: #d64541;
+}
+
+.sl-telecom-services:hover .sl-icon,
+.sl-telecom-services:hover .sl-title::after,
+.sl-telecom-services:hover .sl-button {
+  color: #d64541;
+  background-color: #fff;
+}
+
+.sl-bespoke-software:hover {
+  color: #fff;
+  background-color: #67809f;
+}
+
+.sl-bespoke-software:hover .sl-icon,
+.sl-bespoke-software:hover .sl-title::after,
+.sl-bespoke-software:hover .sl-button {
+  color: #67809f;
+  background-color: #fff;
+}
+
+.sl-digital-marketing:hover {
+  color: #fff;
+  background-color: #2ecc71;
+}
+
+.sl-digital-marketing:hover .sl-icon,
+.sl-digital-marketing:hover .sl-title::after,
+.sl-digital-marketing:hover .sl-button {
+  color: #2ecc71;
+  background-color: #fff;
+}
+
+.sl-cyber-security:hover {
+  color: #fff;
+  background-color: #f62459;
+}
+
+.sl-cyber-security:hover .sl-icon,
+.sl-cyber-security:hover .sl-title::after,
+.sl-cyber-security:hover .sl-button {
   color: #f62459;
   background-color: #fff;
 }
