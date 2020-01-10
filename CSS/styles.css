@@ -19,6 +19,21 @@ p {
   line-height: 1.375rem;
 }
 
+.link-btn {
+  display: inline-block;
+  line-height: 35px;
+  padding: 5px 15px;
+  text-transform: uppercase;
+  font-size: 1.063rem;
+  border-radius: 3px;
+  margin: 0;
+  text-decoration: none;
+}
+
+.link-btn:visited {
+  color: #fff;
+}
+
 .main-header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -193,6 +208,15 @@ p {
   content: "-";
   padding-right: 35px;
   padding-left: 35px;
+}
+
+.nav-bar .nav-container .nav-sub-menu a {
+  text-decoration: none;
+}
+
+.nav-bar .nav-container .nav-sub-menu a:visited {
+  color: #fff;
+  text-decoration: none;
 }
 
 .nav-bar .nav-container .nsm-web-design {
@@ -476,19 +500,6 @@ p {
   line-height: 1.375rem;
 }
 
-.service-list-item .sl-button {
-  display: block;
-  display: inline-block;
-  height: auto;
-  line-height: 35px;
-  padding: 5px 15px;
-  text-transform: uppercase;
-  font-size: 1.063rem;
-  border-radius: 3px;
-  margin: 0;
-  text-decoration: none;
-}
-
 .service-list-item .telecom-services-icon,
 .service-list-item .telecom-services-button {
   color: #fff;
@@ -622,15 +633,6 @@ p {
 }
 
 .profile-outer .profile-container .profile-item a {
-  display: inline-block;
-  height: auto;
-  line-height: 35px;
-  padding: 5px 15px;
-  text-transform: uppercase;
-  font-size: 1.063rem;
-  border-radius: 3px;
-  margin: 0;
-  text-decoration: none;
   background-color: #fff;
   color: #333645;
 }
@@ -806,42 +808,29 @@ p {
   margin-bottom: 25px;
 }
 
-.latest-outer .latest-container .card-text .btn {
-  display: inline-block;
-  height: auto;
-  line-height: 35px;
-  padding: 5px 15px;
-  text-transform: uppercase;
-  font-size: 1.063rem;
-  border-radius: 3px;
-  margin: 0;
-  text-decoration: none;
-  color: #fff;
-}
-
-.latest-outer .latest-container .card-text .btn-1 {
+.latest-outer .latest-container .card-text .sl-link-btn-1 {
   background-color: #4183d7;
 }
 
-.latest-outer .latest-container .card-text .btn-1:hover {
+.latest-outer .latest-container .card-text .sl-link-btn-1:hover {
   background-color: #2a6ec6;
   border-color: #2665b5;
 }
 
-.latest-outer .latest-container .card-text .btn-2 {
+.latest-outer .latest-container .card-text .sl-link-btn-2 {
   background-color: #926fb1;
 }
 
-.latest-outer .latest-container .card-text .btn-2:hover {
+.latest-outer .latest-container .card-text .sl-link-btn-2:hover {
   background-color: #7e57a0;
   border-color: #735093;
 }
 
-.latest-outer .latest-container .card-text .btn-3 {
+.latest-outer .latest-container .card-text .sl-link-btn-3 {
   background-color: #4183d7;
 }
 
-.latest-outer .latest-container .card-text .btn-3:hover {
+.latest-outer .latest-container .card-text .sl-link-btn-3:hover {
   background-color: #2a6ec6;
   border-color: #2665b5;
 }
@@ -859,6 +848,10 @@ p {
   margin-top: 30px;
   padding-top: 30px;
   border-top: 1px #ccc solid;
+}
+
+.latest-outer .latest-container .card-details-item img {
+  border-radius: 50%;
 }
 
 .latest-outer .latest-container .card-details-item p {
