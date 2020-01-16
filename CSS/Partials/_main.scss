@@ -463,18 +463,6 @@ p {
     margin-bottom: 17px;
   }
 
-  .web-design-icon,
-  .web-design-button {
-    color: #fff;
-    background-color: $web-design-light;
-  }
-
-  .it-support-icon,
-  .it-support-button {
-    color: #fff;
-    background-color: $it-support-light;
-  }
-
   .sl-title {
     display: block;
     position: relative;
@@ -502,6 +490,18 @@ p {
     margin-bottom: 13px;
     font-size: 0.8125rem;
     line-height: 1.375rem;
+  }
+
+  .web-design-icon,
+  .web-design-button {
+    color: #fff;
+    background-color: $web-design-light;
+  }
+
+  .it-support-icon,
+  .it-support-button {
+    color: #fff;
+    background-color: $it-support-light;
   }
 
   .telecom-services-icon,
@@ -539,6 +539,10 @@ p {
     color: $web-design-light;
     background-color: #fff;
   }
+
+  span {
+    color: #fff;
+  }
 }
 
 .sl-it-support:hover {
@@ -551,7 +555,12 @@ p {
     color: $it-support-light;
     background-color: #fff;
   }
+
+  span {
+    color: #fff;
+  }
 }
+
 .sl-telecom-services:hover {
   color: #fff;
   background-color: $telecom-services-light;
@@ -561,6 +570,10 @@ p {
   .sl-button {
     color: $telecom-services-light;
     background-color: #fff;
+  }
+
+  span {
+    color: #fff;
   }
 }
 
@@ -574,6 +587,10 @@ p {
     color: $bespoke-software-light;
     background-color: #fff;
   }
+
+  span {
+    color: #fff;
+  }
 }
 
 .sl-digital-marketing:hover {
@@ -586,6 +603,10 @@ p {
     color: $digital-marketing-light;
     background-color: #fff;
   }
+
+  span {
+    color: #fff;
+  }
 }
 
 .sl-cyber-security:hover {
@@ -597,6 +618,10 @@ p {
   .sl-button {
     color: $cyber-security-light;
     background-color: #fff;
+  }
+
+  span {
+    color: #fff;
   }
 }
 

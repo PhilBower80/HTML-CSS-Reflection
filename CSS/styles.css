@@ -459,18 +459,6 @@ p {
   margin-bottom: 17px;
 }
 
-.service-list-item .web-design-icon,
-.service-list-item .web-design-button {
-  color: #fff;
-  background-color: #926fb1;
-}
-
-.service-list-item .it-support-icon,
-.service-list-item .it-support-button {
-  color: #fff;
-  background-color: #4183d7;
-}
-
 .service-list-item .sl-title {
   display: block;
   position: relative;
@@ -498,6 +486,18 @@ p {
   margin-bottom: 13px;
   font-size: 0.8125rem;
   line-height: 1.375rem;
+}
+
+.service-list-item .web-design-icon,
+.service-list-item .web-design-button {
+  color: #fff;
+  background-color: #926fb1;
+}
+
+.service-list-item .it-support-icon,
+.service-list-item .it-support-button {
+  color: #fff;
+  background-color: #4183d7;
 }
 
 .service-list-item .telecom-services-icon,
@@ -536,6 +536,10 @@ p {
   background-color: #fff;
 }
 
+.sl-web-design:hover span {
+  color: #fff;
+}
+
 .sl-it-support:hover {
   color: #fff;
   background-color: #4183d7;
@@ -546,6 +550,10 @@ p {
 .sl-it-support:hover .sl-button {
   color: #4183d7;
   background-color: #fff;
+}
+
+.sl-it-support:hover span {
+  color: #fff;
 }
 
 .sl-telecom-services:hover {
@@ -560,6 +568,10 @@ p {
   background-color: #fff;
 }
 
+.sl-telecom-services:hover span {
+  color: #fff;
+}
+
 .sl-bespoke-software:hover {
   color: #fff;
   background-color: #67809f;
@@ -570,6 +582,10 @@ p {
 .sl-bespoke-software:hover .sl-button {
   color: #67809f;
   background-color: #fff;
+}
+
+.sl-bespoke-software:hover span {
+  color: #fff;
 }
 
 .sl-digital-marketing:hover {
@@ -584,6 +600,10 @@ p {
   background-color: #fff;
 }
 
+.sl-digital-marketing:hover span {
+  color: #fff;
+}
+
 .sl-cyber-security:hover {
   color: #fff;
   background-color: #f62459;
@@ -594,6 +614,10 @@ p {
 .sl-cyber-security:hover .sl-button {
   color: #f62459;
   background-color: #fff;
+}
+
+.sl-cyber-security:hover span {
+  color: #fff;
 }
 
 .profile-outer {
