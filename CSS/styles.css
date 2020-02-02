@@ -113,28 +113,65 @@ p {
   border-color: #797a85;
 }
 
-.main-header .actions .menu-btn {
-  background-color: #333645;
-  font-size: 0.75rem;
-  margin-left: 20px;
-  line-height: 16px;
-}
-
-.main-header .actions .menu-btn .burger-bun-logo {
-  font-size: 1.75rem;
-}
-
-.main-header .actions .menu-btn:hover {
-  background-color: #22242e;
-  border-color: #191a22;
-}
-
 .main-header .actions .phone-call-btn {
   display: none;
   color: #333645;
   font-size: 32px;
   margin-left: 15px;
   line-height: 1;
+}
+
+#burger-container {
+  background-color: #333645;
+  margin-left: 20px;
+}
+
+#burger-container:hover {
+  background-color: #22242e;
+  border-color: #191a22;
+}
+
+#burger-container .menu-btn {
+  display: block;
+  cursor: pointer;
+  position: relative;
+  top: 3px;
+}
+
+#burger-container .menu-btn .bar {
+  background: #fff;
+  display: block;
+  width: 33px;
+  height: 3px;
+  margin-bottom: 5px;
+  position: relative;
+  top: 0;
+  -webkit-transition: all ease-out 0.4s;
+  transition: all ease-out 0.4s;
+}
+
+#burger-container .menu-btn .desc {
+  position: relative;
+  top: -2px;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+#burger-container.open span:nth-child(1) {
+  -webkit-transform: rotate(-405deg);
+          transform: rotate(-405deg);
+  top: 8px;
+}
+
+#burger-container.open span:nth-child(2) {
+  width: 0;
+  opacity: 0;
+}
+
+#burger-container.open span:nth-child(3) {
+  -webkit-transform: rotate(405deg);
+          transform: rotate(405deg);
+  top: -8px;
 }
 
 .sticky {
