@@ -4,6 +4,12 @@ body {
   right: 0px;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+  overflow-y: hidden;
+}
+
+.scrollbar {
+  overflow-y: auto;
+  height: 100vh;
 }
 
 html {

@@ -3,6 +3,12 @@ body {
 	position: relative;
 	right: 0px;
 	transition: 0.5s; //key
+	overflow-y: hidden;
+}
+
+.scrollbar {
+	overflow-y: auto;
+	height: 100vh;
 }
 
 html {
