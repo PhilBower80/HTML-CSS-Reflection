@@ -2,13 +2,14 @@ body {
 	font-family: 'Poppins', 'sans serif';
 	position: relative;
 	right: 0px;
-	transition: 0.5s; //key
+	transition: 0.7s; //key
 	overflow-y: hidden;
 }
 
 .scrollbar {
 	overflow-y: auto;
 	height: 100vh;
+	background-color: #fff;
 }
 
 html {
@@ -241,7 +242,7 @@ p {
 			text-transform: uppercase;
 			font-size: 1rem;
 			line-height: 2.813rem;
-			z-index: 1000;
+			z-index: 100;
 
 			li {
 				display: inline-block;
@@ -393,12 +394,10 @@ p {
 // SIDEBAR
 
 .nav-sidebar {
-	display: block;
 	position: fixed;
 	top: 0;
-	right: -350px;
-	transition: 0.5s; //key
-	z-index: 9;
+	right: 0px;
+	z-index: -100;
 	height: 100%;
 	background: $nm-bg;
 	width: 350px;
@@ -442,10 +441,12 @@ p {
 	}
 }
 
-.nav-sidebar.active {
-	// this class is toggled/added via JS (burgerMenu.js)
-	right: 0; // key
-}
+// .nav-sidebar.active {
+// 	// this class is toggled/added via JS (burgerMenu.js)
+// 	// right: 0; // key
+// 	// z-index: 9;
+// 	// display: block;
+// }
 
 body.active {
 	position: relative;
