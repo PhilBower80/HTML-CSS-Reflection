@@ -1,15 +1,6 @@
 body {
 	font-family: 'Poppins', 'sans serif';
-	position: relative;
-	right: 0px;
-	transition: 0.7s; //key
 	overflow-y: hidden;
-}
-
-.scrollbar {
-	overflow-y: auto;
-	height: 100vh;
-	background-color: #fff;
 }
 
 html {
@@ -40,6 +31,26 @@ p {
 	&:visited {
 		color: #fff;
 	}
+}
+
+main {
+	background-color: #fff;
+}
+
+.main-outer {
+	overflow-y: auto;
+	overflow-x: hidden;
+	height: 100vh;
+	background-color: #fff;
+	position: relative;
+	right: 0px;
+	transition: 0.7s; //key
+	z-index: 10;
+}
+
+.main-outer.active {
+	position: relative;
+	right: 350px;
 }
 
 // HEADER
@@ -182,11 +193,12 @@ p {
 	top: 0;
 	width: 100%;
 	background-color: #fff;
-	z-index: 1000;
 }
 
+/* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
 .sticky + main {
 	padding-top: 210px;
+	// margin-top: 50px;
 }
 
 .nav-bar {
@@ -401,7 +413,7 @@ p {
 	height: 100%;
 	background: $nm-bg;
 	width: 350px;
-	overflow: auto;
+	// overflow: auto;
 	line-height: 1.42;
 
 	.heading {
@@ -439,18 +451,6 @@ p {
 			}
 		}
 	}
-}
-
-// .nav-sidebar.active {
-// 	// this class is toggled/added via JS (burgerMenu.js)
-// 	// right: 0; // key
-// 	// z-index: 9;
-// 	// display: block;
-// }
-
-body.active {
-	position: relative;
-	right: 350px;
 }
 
 // end of SIDEBAR
@@ -1309,3 +1309,30 @@ body.active {
 	display: none;
 }
 // end of SWAP GREYSCALE IMAGE FOR COLOR IMAGES (CLIENT & ACCREDITATIONS)
+
+// COOKIE
+
+.cookie-wrapper {
+	display: flex;
+	position: fixed;
+	bottom: 0px;
+	width: 100%;
+	height: 50px;
+	justify-content: center;
+	align-items: center;
+	z-index: 20;
+	margin: 0;
+	background-color: $nm-bg;
+	text-align: center;
+
+	.cookie-close {
+		cursor: pointer;
+	}
+
+	p {
+		font-size: 1rem;
+		margin: 0;
+	}
+}
+
+// end of COOKIE

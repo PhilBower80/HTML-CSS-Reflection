@@ -6,8 +6,37 @@
 
 (30 mins) figured out how to slide the main content of page so sidebar pushes it across screen. Using relative positioning and transition effect.
 
+(30 mins) fixed header so that it displays above the sidebar which is fixed in position. Body now slides across to left to reveal the sidebar.
 
+(60 mins) Added html/css/js for cookie
 
+(30 mins) - fixed cookie overlapping with scrollbar.
 
 TO DO...
 media query for sidebar
+sticky header
+
+main
+main-outer
+main-inner
+
+sidebar
+
+
+
+Z-Index
+
+
+.scrollbar = 10
+
+.nav-sub-menu = 100
+
+.nav-sidebar = -100
+
+.ablink = 1
+
+.tooltipArrow
+-before = -100
+:hover::before = 100
+
+.cookie-wrapper = 20
