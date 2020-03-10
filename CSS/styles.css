@@ -1,5 +1,9 @@
 body {
   font-family: 'Poppins', 'sans serif';
+  position: relative;
+  right: 0px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 html {
@@ -157,18 +161,18 @@ p {
   text-transform: uppercase;
 }
 
-#burger-container.open span:nth-child(1) {
+#burger-container.active span:nth-child(1) {
   -webkit-transform: rotate(-405deg);
           transform: rotate(-405deg);
   top: 8px;
 }
 
-#burger-container.open span:nth-child(2) {
+#burger-container.active span:nth-child(2) {
   width: 0;
   opacity: 0;
 }
 
-#burger-container.open span:nth-child(3) {
+#burger-container.active span:nth-child(3) {
   -webkit-transform: rotate(405deg);
           transform: rotate(405deg);
   top: -8px;
@@ -393,41 +397,42 @@ p {
   color: #fff;
 }
 
-.sidebar {
+.nav-sidebar {
   display: block;
   position: fixed;
   top: 0;
-  right: 0;
+  right: -350px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
   z-index: 9;
   height: 100%;
   background: #333645;
   width: 350px;
   overflow: auto;
+  line-height: 1.42;
+}
+
+.nav-sidebar .heading {
+  list-style: none;
+  padding-left: 0;
   margin: 0;
-  padding: 0;
 }
 
-.sidebar .heading {
-  list-style: none;
-  padding-left: 0;
-}
-
-.sidebar .heading a {
+.nav-sidebar .heading a {
   display: block;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
   color: #fff;
-  padding: 20px;
+  padding: 15px 20px;
   text-transform: uppercase;
-  font-size: 1rem;
   text-decoration: none;
-  line-height: 1;
 }
 
-.sidebar .heading .sub-heading {
+.nav-sidebar .heading .sub-heading {
   list-style: none;
   padding-left: 0;
 }
 
-.sidebar .heading .sub-heading a {
+.nav-sidebar .heading .sub-heading a {
   border-top: 1px solid rgba(255, 255, 255, 0.05);
   display: block;
   color: #fff;
@@ -438,9 +443,18 @@ p {
   text-decoration: none;
 }
 
-.sidebar .heading .sub-heading a:before {
+.nav-sidebar .heading .sub-heading a:before {
   content: '\00BB';
   padding-right: 15px;
+}
+
+.nav-sidebar.active {
+  right: 0;
+}
+
+body.active {
+  position: relative;
+  right: 350px;
 }
 
 .slides .banner-container {
