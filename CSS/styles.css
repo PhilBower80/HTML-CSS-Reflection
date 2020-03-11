@@ -57,7 +57,7 @@ main {
 }
 
 #my-header {
-  z-index: 10000;
+  z-index: 1000;
 }
 
 .main-header {
@@ -163,6 +163,13 @@ main {
   cursor: pointer;
   position: relative;
   top: 3px;
+}
+
+#burger-container .menu-btn span {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 #burger-container .menu-btn .bar {
@@ -1333,8 +1340,8 @@ main {
   .nav-bar .nav-container .nav-sub-menu {
     font-size: 0.8125rem;
   }
-  .nav-bar .nav-container .nav-sub-menu li:nth-of-type(n+2)::before {
-    content: "-";
+  .nav-bar .nav-container .nav-sub-menu li:nth-of-type(n + 2)::before {
+    content: '-';
     padding-right: 20px;
     padding-left: 20px;
   }
