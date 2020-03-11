@@ -24,19 +24,3 @@ sidebar
 
 
 
-Z-Index
-
-
-.scrollbar = 10
-
-.nav-sub-menu = 100
-
-.nav-sidebar = -100
-
-.ablink = 1
-
-.tooltipArrow
--before = -100
-:hover::before = 100
-
-.cookie-wrapper = 20
