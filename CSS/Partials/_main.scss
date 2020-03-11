@@ -55,6 +55,10 @@ main {
 
 // HEADER
 
+#my-header {
+	z-index: 10000;
+}
+
 .main-header {
 	display: flex;
 	width: 1200px;
@@ -62,6 +66,7 @@ main {
 	justify-content: space-between;
 	align-items: center;
 	padding: 20px 0;
+	background-color: #fff;
 
 	.nm-logo {
 		padding: 0 15px;
@@ -186,6 +191,143 @@ main {
 
 // END OF HEADER
 
+// FLOATING NAVBAR
+
+// #floating-header {
+// 	.main-header {
+// 		display: flex;
+// 		width: 1200px;
+// 		margin: 0 auto;
+// 		justify-content: space-between;
+// 		align-items: center;
+// 		padding: 20px 0;
+// 		background-color: #fff;
+
+// 		.nm-logo {
+// 			padding: 0 15px;
+
+// 			.nm-image {
+// 				vertical-align: middle;
+// 				width: 100%;
+// 				height: auto;
+// 			}
+// 		}
+
+// 		.actions {
+// 			padding: 0 15px;
+// 			height: 56px;
+// 			white-space: nowrap;
+
+// 			.action-btn {
+// 				display: inline-block;
+// 				vertical-align: middle;
+// 				align-items: center;
+// 				text-align: center;
+// 				padding: 5px 15px;
+// 				color: #fff;
+// 				font-size: 1.125rem;
+// 				border: 1px solid transparent;
+// 				border-radius: 3px;
+// 				text-decoration: none;
+// 			}
+
+// 			.support-btn {
+// 				background-color: $support-light;
+// 				border-color: $support-light;
+// 				line-height: 45px;
+
+// 				.mouse-logo {
+// 					padding-right: 12px;
+// 					font-size: 1.25rem;
+// 				}
+
+// 				&:hover {
+// 					background-color: $support-bg-dark;
+// 					border-color: $support-border-dark;
+// 				}
+// 			}
+
+// 			.contact-btn {
+// 				background-color: $contact-light;
+// 				border-color: $contact-light;
+// 				margin-left: 20px;
+// 				line-height: 45px;
+
+// 				.plane-logo {
+// 					padding-right: 12px;
+// 					font-size: 1.25rem;
+// 				}
+
+// 				&:hover {
+// 					background-color: $contact-bg-dark;
+// 					border-color: $contact-border-dark;
+// 				}
+// 			}
+
+// 			.phone-call-btn {
+// 				display: none;
+// 				color: $nm-bg;
+// 				font-size: 32px;
+// 				margin-left: 15px;
+// 				line-height: 1;
+// 			}
+// 		}
+// 	}
+
+// 	#floatiung-burger-container {
+// 		background-color: $nm-bg;
+// 		margin-left: 20px;
+
+// 		&:hover {
+// 			background-color: #22242e;
+// 			border-color: #191a22;
+// 		}
+
+// 		.menu-btn {
+// 			display: block;
+// 			cursor: pointer;
+// 			position: relative;
+// 			top: 3px;
+// 			user-select: none;
+
+// 			.bar {
+// 				background: #fff;
+// 				display: block;
+// 				width: 33px;
+// 				height: 3px;
+// 				margin-bottom: 5px;
+// 				position: relative;
+// 				top: 0;
+// 				transition: all ease-out 0.4s;
+// 			}
+// 			.desc {
+// 				position: relative;
+// 				top: -2px;
+// 				font-size: 12px;
+// 				text-transform: uppercase;
+// 			}
+// 		}
+// 	}
+
+// 	#burger-container.active span {
+// 		&:nth-child(1) {
+// 			transform: rotate(-405deg);
+// 			top: 8px;
+// 		}
+// 		&:nth-child(2) {
+// 			width: 0;
+// 			opacity: 0;
+// 		}
+
+// 		&:nth-child(3) {
+// 			transform: rotate(405deg);
+// 			top: -8px;
+// 		}
+// 	}
+// }
+
+// end of FLOATING NAVBAR
+
 // NAVBAR
 
 .sticky {
@@ -196,9 +338,9 @@ main {
 }
 
 /* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
-.sticky + main {
+.sticky + .main-inner {
 	padding-top: 210px;
-	// margin-top: 50px;
+	// margin-top: 210px;
 }
 
 .nav-bar {

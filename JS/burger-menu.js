@@ -7,3 +7,13 @@ burgerMenu.addEventListener('click', e => {
 	sidebar.classList.toggle('active');
 	mainContent.classList.toggle('active');
 });
+
+// const floatingBurgerMenu = document.querySelector('#floating-burger-container');
+
+// floatingBurgerMenu.addEventListener('click', e => {
+// 	const sidebar = document.querySelector('.nav-sidebar');
+// 	burgerMenu.classList.toggle('active');
+// 	const mainContent = document.querySelector('.main-outer');
+// 	sidebar.classList.toggle('active');
+// 	mainContent.classList.toggle('active');
+// });
