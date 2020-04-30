@@ -12,5 +12,5 @@ if (cookieCheck === 'true') {
 	cookie.style.display = 'none';
 } else {
 	console.log('no cookie found');
-	cookie.style.display = 'flex'; //used !important to override bootstrap
+	cookie.style.display = 'flex';
 }

@@ -1,7 +1,7 @@
 "use strict";
 
-var cookie = document.querySelector('.cookie-wrapper');
-var closeCookie = document.querySelector('.cookie-close');
+var cookie = document.querySelector('.cookie-outer');
+var closeCookie = document.querySelector('.accept-cookie-btn');
 var cookieCheck = localStorage.getItem('cookie');
 closeCookie.addEventListener('click', function () {
   localStorage.setItem('cookie', 'true');
@@ -13,5 +13,5 @@ if (cookieCheck === 'true') {
   cookie.style.display = 'none';
 } else {
   console.log('no cookie found');
-  cookie.style.display = 'flex'; //used !important to override bootstrap
+  cookie.style.display = 'flex';
 }

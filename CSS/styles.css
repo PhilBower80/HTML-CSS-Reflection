@@ -1309,7 +1309,7 @@ main {
   position: fixed;
   width: 100%;
   bottom: 0px;
-  z-index: 20;
+  z-index: 1000;
   color: #fff;
   background-color: #272831;
 }
@@ -1348,9 +1348,11 @@ main {
 }
 
 .cookie-outer .cookie-container .cookie-buttons {
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   width: 40%;
 }
 
