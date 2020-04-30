@@ -1321,26 +1321,92 @@ main {
 
 // COOKIE
 
-.cookie-wrapper {
-	display: flex;
-	position: fixed;
-	bottom: 0px;
-	width: 100%;
-	height: 50px;
-	justify-content: center;
-	align-items: center;
-	z-index: 20;
-	margin: 0;
-	background-color: $nm-bg;
-	text-align: center;
+// .cookie-wrapper {
+// 	display: flex;
+// 	position: fixed;
+// 	bottom: 0px;
+// 	width: 100%;
+// 	height: 50px;
+// 	justify-content: center;
+// 	align-items: center;
+// 	z-index: 20;
+// 	margin: 0;
+// 	background-color: $nm-bg;
+// 	color: #fff;
+// 	text-align: center;
 
-	.cookie-close {
-		cursor: pointer;
+// 	.cookie-close {
+// 		cursor: pointer;
+// 	}
+
+// 	p {
+// 		font-size: 1rem;
+// 		margin: 0;
+// 	}
+// }
+
+.cookie-outer {
+	display: flex;
+	flex-direction: column;
+	position: fixed;
+	width: 100%;
+	bottom: 0px;
+	z-index: 20;
+	color: #fff;
+	background-color: #272831;
+
+	.brand-img {
+		background-image: url('https://www.netmatters.co.uk/assets/images/branded.png');
+		background-repeat: no-repeat;
+		background-position: right center;
+		background-size: auto 100%;
+		background-color: #1d1f28;
+		width: 100%;
 	}
 
-	p {
-		font-size: 1rem;
-		margin: 0;
+	.cookie-container {
+		margin: auto;
+		width: 1200px;
+		color: #fff;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+
+		a {
+			&:visited {
+				color: #fff;
+			}
+		}
+
+		.cookie-policy {
+			width: 60%;
+		}
+
+		.cookie-buttons {
+			justify-content: space-between;
+			width: 40%;
+		}
+
+		h3 {
+			text-transform: uppercase;
+			color: white;
+			font-size: 1.625rem;
+			font-weight: normal;
+		}
+
+		p {
+			color: #ccc;
+			font-size: 13px;
+		}
+		.settings-btn {
+			color: #fff;
+			border: 1px solid #fff;
+		}
+
+		.accept-cookie-btn {
+			color: #fff;
+			background-color: $web-design-light;
+		}
 	}
 }
 

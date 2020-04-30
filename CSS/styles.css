@@ -1298,33 +1298,82 @@ main {
   display: none;
 }
 
-.cookie-wrapper {
+.cookie-outer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   position: fixed;
-  bottom: 0px;
   width: 100%;
-  height: 50px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  bottom: 0px;
+  z-index: 20;
+  color: #fff;
+  background-color: #272831;
+}
+
+.cookie-outer .brand-img {
+  background-image: url("https://www.netmatters.co.uk/assets/images/branded.png");
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: auto 100%;
+  background-color: #1d1f28;
+  width: 100%;
+}
+
+.cookie-outer .cookie-container {
+  margin: auto;
+  width: 1200px;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  z-index: 20;
-  margin: 0;
-  background-color: #333645;
-  text-align: center;
 }
 
-.cookie-wrapper .cookie-close {
-  cursor: pointer;
+.cookie-outer .cookie-container a:visited {
+  color: #fff;
 }
 
-.cookie-wrapper p {
-  font-size: 1rem;
-  margin: 0;
+.cookie-outer .cookie-container .cookie-policy {
+  width: 60%;
+}
+
+.cookie-outer .cookie-container .cookie-buttons {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 40%;
+}
+
+.cookie-outer .cookie-container h3 {
+  text-transform: uppercase;
+  color: white;
+  font-size: 1.625rem;
+  font-weight: normal;
+}
+
+.cookie-outer .cookie-container p {
+  color: #ccc;
+  font-size: 13px;
+}
+
+.cookie-outer .cookie-container .settings-btn {
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+.cookie-outer .cookie-container .accept-cookie-btn {
+  color: #fff;
+  background-color: #926fb1;
 }
 
 @media (max-width: 1259px) {

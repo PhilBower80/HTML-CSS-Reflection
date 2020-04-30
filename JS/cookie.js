@@ -1,5 +1,5 @@
-const cookie = document.querySelector('.cookie-wrapper');
-const closeCookie = document.querySelector('.cookie-close');
+const cookie = document.querySelector('.cookie-outer');
+const closeCookie = document.querySelector('.accept-cookie-btn');
 const cookieCheck = localStorage.getItem('cookie');
 
 closeCookie.addEventListener('click', () => {
