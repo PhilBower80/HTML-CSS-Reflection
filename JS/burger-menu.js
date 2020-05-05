@@ -1,10 +1,15 @@
 const burgerMenu = document.querySelector('#burger-container');
+const mainContent = document.querySelector('.main-outer');
+const mask = document.querySelector('.mask');
 
-burgerMenu.addEventListener('click', e => {
-	const sidebar = document.querySelector('.nav-sidebar');
-	const mainContent = document.querySelector('.main-outer');
-
+burgerMenu.addEventListener('click', () => {
+	mask.classList.toggle('active');
 	burgerMenu.classList.toggle('active');
-	sidebar.classList.toggle('active');
+	mainContent.classList.toggle('active');
+});
+
+mask.addEventListener('click', () => {
+	mask.classList.toggle('active');
+	burgerMenu.classList.toggle('active');
 	mainContent.classList.toggle('active');
 });
