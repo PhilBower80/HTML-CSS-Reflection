@@ -1,6 +1,6 @@
 body {
 	font-family: 'Poppins', 'sans serif';
-	overflow-y: hidden;
+	// overflow-y: auto;
 }
 
 html {
@@ -312,36 +312,6 @@ main {
 				padding-bottom: 1px;
 				line-height: 1;
 			}
-
-			.fa-code {
-				color: $web-design-light;
-				padding-bottom: 10px;
-			}
-
-			.fa-desktop {
-				color: $support-light;
-				padding-bottom: 10px;
-			}
-
-			.fa-phone-alt {
-				color: $telecom-services-light;
-				padding-bottom: 10px;
-			}
-
-			.fa-th {
-				color: $bespoke-software-light;
-				padding-bottom: 10px;
-			}
-
-			.fa-signal {
-				color: $digital-marketing-light;
-				padding-bottom: 10px;
-			}
-
-			.fa-shield-alt {
-				color: $cyber-security-light;
-				padding-bottom: 10px;
-			}
 		}
 
 		.nav-item-1:hover {
@@ -400,6 +370,36 @@ main {
 	}
 }
 
+.fa-code {
+	color: $web-design-light;
+	padding-bottom: 10px;
+}
+
+.fa-desktop {
+	color: $support-light;
+	padding-bottom: 10px;
+}
+
+.fa-phone-alt {
+	color: $telecom-services-light;
+	padding-bottom: 10px;
+}
+
+.fa-th {
+	color: $bespoke-software-light;
+	padding-bottom: 10px;
+}
+
+.fa-signal {
+	color: $digital-marketing-light;
+	padding-bottom: 10px;
+}
+
+.fa-shield-alt {
+	color: $cyber-security-light;
+	padding-bottom: 10px;
+}
+
 //  end of NAVBAR
 
 // SIDEBAR
@@ -412,6 +412,19 @@ main {
 	background: $nm-bg;
 	width: 350px;
 	line-height: 1.42;
+	overflow-y: auto;
+	&::-webkit-scrollbar {
+		display: none;
+	}
+
+	a {
+		display: block;
+		border-top: 1px solid rgba(255, 255, 255, 0.05);
+		color: #fff;
+		padding: 15px 20px;
+		text-transform: uppercase;
+		text-decoration: none;
+	}
 
 	.heading {
 		list-style: none;
@@ -419,12 +432,9 @@ main {
 		margin: 0;
 
 		a {
-			display: block;
-			border-top: 1px solid rgba(255, 255, 255, 0.05);
-			color: #fff;
-			padding: 15px 20px;
-			text-transform: uppercase;
-			text-decoration: none;
+			&:hover {
+				background-color: rgba(255, 255, 255, 0.05);
+			}
 		}
 
 		.sub-heading {
@@ -451,6 +461,34 @@ main {
 }
 
 // end of SIDEBAR
+
+.mobile-nav {
+	display: none;
+	padding: 0;
+	margin: 0;
+
+	ul {
+		list-style: none;
+		padding-left: 0;
+		margin: auto;
+	}
+	a {
+		// margin: auto;
+		text-align: center;
+	}
+
+	.mob-heading {
+		margin: 20px 0 20px 0;
+		border: 1px solid rgba(255, 255, 255, 0.1);
+		&:hover {
+			background-color: rgba(255, 255, 255, 0.05);
+		}
+	}
+
+	.mob-sub {
+		background-color: rgba(0, 0, 0, 0.25);
+	}
+}
 
 // BANNER
 

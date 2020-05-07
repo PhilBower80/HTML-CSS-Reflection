@@ -25,6 +25,10 @@
 		}
 	}
 
+	// .mobile-nav {
+	// 	display: none;
+	// }
+
 	.banner-container {
 		.banner-item {
 			width: 970px;
@@ -126,6 +130,10 @@
 
 	.nav-bar {
 		display: none;
+	}
+
+	.mobile-nav {
+		display: flex;
 	}
 
 	.banner-container {
@@ -268,3 +276,7 @@
 		display: none;
 	}
 }
+
+// .mobile-nav {
+// 	display: flex;
+// }
