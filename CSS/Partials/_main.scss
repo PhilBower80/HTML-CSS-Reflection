@@ -1,6 +1,5 @@
 body {
 	font-family: 'Poppins', 'sans serif';
-	// overflow-y: auto;
 }
 
 html {
@@ -126,6 +125,7 @@ main {
 .burger-container {
 	background-color: $nm-bg;
 	margin-left: 20px;
+	cursor: pointer;
 
 	&:hover {
 		background-color: #22242e;
@@ -134,7 +134,7 @@ main {
 
 	.menu-btn {
 		display: block;
-		cursor: pointer;
+
 		position: relative;
 		top: 3px;
 
@@ -189,11 +189,16 @@ main {
 }
 
 .sticky {
+	// visibility: visible;
 	top: 0 !important;
 	width: 100%;
 	background-color: #fff;
 	z-index: 1000;
 }
+
+// .sticky-off {
+// 	top: -215px !important;
+// }
 
 .nav-bar {
 	background-color: $nm-bg;

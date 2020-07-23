@@ -133,6 +133,7 @@ main {
 .burger-container {
   background-color: #333645;
   margin-left: 20px;
+  cursor: pointer;
 }
 
 .burger-container:hover {
@@ -142,7 +143,6 @@ main {
 
 .burger-container .menu-btn {
   display: block;
-  cursor: pointer;
   position: relative;
   top: 3px;
 }
@@ -1437,6 +1437,147 @@ main {
 
 .main-outer.active {
   right: 350px;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.breadcrumb {
+  -webkit-box-shadow: 0 5px 35px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 5px 35px rgba(0, 0, 0, 0.1);
+  padding: 14px 0 13px;
+}
+
+.breadcrumb ul {
+  padding: 0;
+  margin: 0;
+}
+
+.breadcrumb li {
+  font-size: 0.8125rem;
+  display: inline-block;
+  list-style: none;
+}
+
+.breadcrumb li:not(:first-child)::before {
+  content: '/';
+}
+
+.breadcrumb li:not(:last-child) {
+  font-weight: 700;
+}
+
+.flex-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.form-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 -15px;
+}
+
+.form-col {
+  width: 50%;
+}
+
+.form-group {
+  padding: 0 15px;
+  margin-bottom: 15px;
+}
+
+.message {
+  width: 100%;
+}
+
+.message textarea {
+  width: 100%;
+}
+
+.privacy-checkbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  cursor: pointer;
+}
+
+.privacy-checkbox input {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.privacy-checkbox span {
+  -webkit-box-flex: 10;
+      -ms-flex: 10;
+          flex: 10;
+}
+
+label {
+  display: inline-block;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+label a {
+  text-decoration: underline;
+}
+
+.required::after {
+  content: ' *';
+  color: #d24d57;
+}
+
+input {
+  width: 100%;
+  padding: 5px 15px;
+  height: 47px;
+}
+
+.right-panel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0 15px;
+}
+
+.right-panel div {
+  margin-bottom: 25px;
+}
+
+.right-panel div a {
+  color: #926fb1;
+}
+
+.right-panel div a h2 {
+  margin: 0;
+  font-size: 32px;
+}
+
+.right-panel div a h3 {
+  margin: 0;
+  font-size: 26px;
 }
 
 @media (max-width: 1259px) {
