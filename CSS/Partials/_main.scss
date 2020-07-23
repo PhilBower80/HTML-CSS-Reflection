@@ -1,6 +1,5 @@
 body {
 	font-family: 'Poppins', 'sans serif';
-	// overflow-y: auto;
 }
 
 html {
@@ -126,6 +125,7 @@ main {
 .burger-container {
 	background-color: $nm-bg;
 	margin-left: 20px;
+	cursor: pointer;
 
 	&:hover {
 		background-color: #22242e;
@@ -134,7 +134,7 @@ main {
 
 	.menu-btn {
 		display: block;
-		cursor: pointer;
+
 		position: relative;
 		top: 3px;
 
@@ -189,15 +189,15 @@ main {
 }
 
 .sticky {
+	// visibility: visible;
 	top: 0 !important;
 	width: 100%;
 	background-color: #fff;
 	z-index: 1000;
 }
 
-/* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
-// .sticky + .main-inner {
-// 	padding-top: 210px;
+// .sticky-off {
+// 	top: -215px !important;
 // }
 
 .nav-bar {
@@ -370,32 +370,32 @@ main {
 	}
 }
 
-.fa-code {
+.nav-item-1 a i {
 	color: $web-design-light;
 	padding-bottom: 10px;
 }
 
-.fa-desktop {
+.nav-item-2 a i {
 	color: $support-light;
 	padding-bottom: 10px;
 }
 
-.fa-phone-alt {
+.nav-item-3 a i {
 	color: $telecom-services-light;
 	padding-bottom: 10px;
 }
 
-.fa-th {
+.nav-item-4 a i {
 	color: $bespoke-software-light;
 	padding-bottom: 10px;
 }
 
-.fa-signal {
+.nav-item-5 a i {
 	color: $digital-marketing-light;
 	padding-bottom: 10px;
 }
 
-.fa-shield-alt {
+.nav-item-6 a i {
 	color: $cyber-security-light;
 	padding-bottom: 10px;
 }
@@ -741,6 +741,10 @@ main {
 	.web-design-button {
 		color: #fff;
 		background-color: $web-design-light;
+	}
+
+	.web-design-icon {
+		color: #fff;
 	}
 
 	.it-support-icon,
@@ -1444,7 +1448,7 @@ main {
 	background-color: #fff;
 	position: relative;
 	right: 0px;
-	transition: all ease-in 0.7s; //key
+	transition: all ease-in 0.7s;
 	z-index: 10;
 }
 
