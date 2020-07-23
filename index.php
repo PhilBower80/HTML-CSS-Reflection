@@ -321,4 +321,4 @@ include('inc/header.php');
 
     <?php include('inc/cookie.php'); ?>
     <?php include('inc/footer.php'); ?>
-    <?php include('inc/sidebar.php'); ?>
+    

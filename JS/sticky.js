@@ -1,32 +1,31 @@
-const mainOuter = document.querySelector('.main-outer');
-const header = document.querySelector('#sticky-header');
-let lastScrollTop = 0;
+const body = document.body;
+const scrollUp = 'scroll-up';
+const scrollDown = 'scroll-down';
+let lastScroll = 0;
 
-mainOuter.addEventListener(
-	'scroll',
-	(e) => {
-		// console.log(e);
-		let currentScrollPos = mainOuter.scrollTop;
-		if (currentScrollPos >= 210) {
-			if (currentScrollPos > lastScrollTop) {
-				header.classList.remove('sticky');
-			} else {
-				header.classList.add('sticky');
-			}
+window.addEventListener('scroll', () => {
+	let currentScroll = window.pageYOffset;
+	if (currentScroll > 250) {
+		if (currentScroll == 0) {
+			body.classList.remove(scrollUp);
+			return;
 		}
 
-		lastScrollTop = currentScrollPos <= 210 ? 0 : currentScrollPos; // For Mobile or negative scrolling
-	},
-	false
-);
+		if (currentScroll > lastScroll && !body.classList.contains(scrollDown)) {
+			// down
+			body.classList.remove(scrollUp);
+			body.classList.add(scrollDown);
+			console.log(currentScroll);
+		} else if (
+			currentScroll < lastScroll &&
+			body.classList.contains(scrollDown)
+		) {
+			// up
+			body.classList.remove(scrollDown);
+			body.classList.add(scrollUp);
+			console.log(currentScroll);
+		}
+	}
 
-// const mainOuter = document.querySelector('.main-outer');
-// const header = document.querySelector('#sticky-header');
-
-// mainOuter.addEventListener('scroll', (e) => {
-// 	if (window.pageYOffset >= 210) {
-// 		header.classList.remove('sticky');
-// 	} else {
-// 		header.classList.add('sticky');
-// 	}
-// });
+	lastScroll = currentScroll;
+});

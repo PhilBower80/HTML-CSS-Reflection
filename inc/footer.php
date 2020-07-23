@@ -97,7 +97,7 @@
 
  <?php // include('inc/cookie.php'); ?>
 
-  </div> <!-- end of MAIN-OUTER -->
+
 
   <!-- SIDEBAR MASK -->
   <div class="mask"></div>
@@ -111,8 +111,8 @@
   <script src="JS/sticky.js"></script>
   <!-- <script src="JS/sticky-babel.js"></script> -->
 
-  <!-- <script src="JS/burger-menu.js"></script> -->
-  <script src="JS/burger-menu-babel.js"></script>
+  <script src="JS/burger-menu.js"></script>
+  <!-- <script src="JS/burger-menu-babel.js"></script> -->
 
   <!-- <script src="js/cookie.js"></script> -->
   <script src="js/cookie-babel.js"></script>
