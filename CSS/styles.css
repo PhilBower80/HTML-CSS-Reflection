@@ -1439,6 +1439,12 @@ main {
   right: 350px;
 }
 
+.errorMsg {
+  display: block;
+  color: red;
+  font-size: 1em;
+}
+
 .container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1477,6 +1483,11 @@ main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-flow: row-reverse;
+          flex-flow: row-reverse;
+  max-width: 1200px;
 }
 
 .form-row {
@@ -1499,11 +1510,19 @@ main {
 }
 
 .message {
+  display: block;
   width: 100%;
 }
 
+.message label {
+  display: block;
+}
+
 .message textarea {
+  display: block;
   width: 100%;
+  resize: vertical;
+  word-wrap: break-word;
 }
 
 .privacy-checkbox {
@@ -1530,14 +1549,14 @@ main {
           flex: 10;
 }
 
+.privacy-checkbox a {
+  text-decoration: underline;
+}
+
 label {
   display: inline-block;
   font-weight: 600;
   margin-bottom: 5px;
-}
-
-label a {
-  text-decoration: underline;
 }
 
 .required::after {

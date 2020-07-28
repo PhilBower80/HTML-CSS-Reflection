@@ -4,6 +4,35 @@ include('inc/head.php');
 include('inc/header.php');
 ?>
 
+<?php
+function getLatestNews() {
+  include 'inc/connection.php'; 
+
+  if(isset($_GET['id'])) {
+
+      // $id = $_GET['id'];
+      $id = filter_input(INPUT_GET, 'id', FILTER_SANITIZE_NUMBER_INT);
+  
+      $sql = 'SELECT * FROM pizzas WHERE id = ?';
+  
+      try {
+          $stmt = $db->prepare($sql);
+          $stmt->bindValue(1, $id, PDO::PARAM_INT);
+          $stmt->execute();
+          $results = $stmt->fetch(PDO::FETCH_ASSOC);
+          // print_r($results);
+          return $results;
+      } catch (Exception $e) {
+          echo "Error!: " .  $e->getMessage() . "<br />";
+          return false; // rather than returning an empty PDO object.
+          // return array; // use this line if a foreach is displaying data to page to prevent an error if no array is returned due to a trwon Exception.
+          // die();
+      }   
+  } 
+}
+
+?>
+
     <main>
 
       <!-- BANNER -->
@@ -165,7 +194,7 @@ include('inc/header.php');
       <!-- end of PROFILE -->
 
 
-      <!-- LATEST-->
+      <!-- LATEST NEWS-->
 
       <div class="latest-heading-outer">
         <div class="latest-heading">
@@ -258,7 +287,7 @@ include('inc/header.php');
         </div>
       </div>
 
-      <!-- end of LATEST -->
+      <!-- end of LATEST NEWS-->
 
 
       <!-- CLIENTS -->

@@ -36,6 +36,8 @@
 
 .flex-row {
 	display: flex;
+	flex-flow: row-reverse;
+	max-width: 1200px;
 }
 
 .form-row {
@@ -51,13 +53,19 @@
 .form-group {
 	padding: 0 15px;
 	margin-bottom: 15px;
-	// display: block;
 }
 
 .message {
+	display: block;
 	width: 100%;
+	label {
+		display: block;
+	}
 	textarea {
+		display: block;
 		width: 100%;
+		resize: vertical;
+		word-wrap: break-word;
 	}
 }
 
@@ -72,15 +80,15 @@
 	span {
 		flex: 10;
 	}
+	a {
+		text-decoration: underline;
+	}
 }
 
 label {
 	display: inline-block;
 	font-weight: 600;
 	margin-bottom: 5px;
-	a {
-		text-decoration: underline;
-	}
 }
 
 .required::after {
