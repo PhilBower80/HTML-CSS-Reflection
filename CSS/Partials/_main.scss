@@ -1006,10 +1006,6 @@ main {
 					background-color: $web-design-light;
 				}
 
-				&-3 {
-					background-color: $support-light;
-				}
-
 				&:hover {
 					text-decoration: underline;
 				}
@@ -1049,15 +1045,6 @@ main {
 						text-decoration-color: $web-design-light;
 					}
 				}
-
-				&-3 {
-					color: $support-light;
-
-					&:hover {
-						text-decoration: underline;
-						text-decoration-color: $support-light;
-					}
-				}
 			}
 
 			h3 {
@@ -1095,15 +1082,6 @@ main {
 					&:hover {
 						background-color: $web-design-bg-dark;
 						border-color: $web-design-border-dark;
-					}
-				}
-
-				&-3 {
-					background-color: $support-light;
-
-					&:hover {
-						background-color: $support-bg-dark;
-						border-color: $support-border-dark;
 					}
 				}
 			}

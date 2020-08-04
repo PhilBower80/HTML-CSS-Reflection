@@ -4,7 +4,6 @@ function sendMessage($name, $email, $telephone, $subject, $message, $marketing) 
     include 'connection.php';
 
     $sql = "INSERT INTO contact_form(name, email, telephone, subject, message, marketing) VALUES('$name', '$email', '$telephone', '$subject', '$message', '$marketing')";
-    // $sql = "INSERT INTO `contact_form` (`id`, `name`, `email`, `telephone`, `subject`, `message`, `marketing`) VALUES (NULL, 'Derek Bower', 'derek.bower@email.com', '01602722645', 'Help!', 'This is a test message', '1')";
 
     try {
         $stmt = $db->prepare($sql);
@@ -14,11 +13,29 @@ function sendMessage($name, $email, $telephone, $subject, $message, $marketing) 
         $stmt->bindValue(':subject', $subject, PDO::PARAM_STR);
         $stmt->bindValue(':message', $message, PDO::PARAM_STR);
         $stmt->bindValue(':marketing', $marketing, PDO::PARAM_BOOL);
-
         $stmt->execute();
     } catch (Exception $e){
         echo "Error!: " . $e->getMessage() . "<br />";
     }
 }
+
+
+
+function getLatestNews() {
+    include 'connection.php';
+
+    $sql = 'SELECT * FROM latest_news ORDER BY date_posted DESC LIMIT 3';
+
+    try {
+        $stmt = $db->prepare($sql);
+        $stmt->execute();
+        $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
+        return $results;
+    } catch (Exception $e) {
+        echo "Error!: " .  $e->getMessage() . "<br />";
+        return false;
+    }   
+}
+
 
 ?>

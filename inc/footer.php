@@ -95,8 +95,6 @@
     <!-- end of ACCREDITATIONS -->
 
 
- <?php // include('inc/cookie.php'); ?>
-
   </div> <!-- end of MAIN-OUTER -->
 
   <!-- SIDEBAR MASK -->

@@ -1,8 +1,13 @@
+// * {
+// 	border: 1px solid red;
+// }
+
 .container {
 	display: flex;
 	max-width: 1200px;
 	margin: 0 auto;
 	padding: 0 15px;
+	justify-content: space-between;
 }
 
 // Breadcrumb
@@ -36,80 +41,26 @@
 
 .flex-row {
 	display: flex;
-	flex-flow: row-reverse;
+	flex-flow: row wrap;
 	max-width: 1200px;
+	// width: 100%;
+	// margin: 0 -15px;
 }
 
-.form-row {
-	display: flex;
-	justify-content: space-between;
-	margin: 0 -15px;
+.panel-1 {
+	width: 66.6%;
+	// padding: 1em;
+	// min-width: 630px;
+	// order: 2;
 }
 
-.form-col {
-	width: 50%;
-}
-
-.form-group {
-	padding: 0 15px;
-	margin-bottom: 15px;
-}
-
-.message {
-	display: block;
-	width: 100%;
-	label {
-		display: block;
-	}
-	textarea {
-		display: block;
-		width: 100%;
-		resize: vertical;
-		word-wrap: break-word;
-	}
-}
-
-.privacy-checkbox {
-	display: flex;
-	justify-content: space-between;
-	align-content: center;
-	cursor: pointer;
-	input {
-		flex: 1;
-	}
-	span {
-		flex: 10;
-	}
-	a {
-		text-decoration: underline;
-	}
-}
-
-label {
-	display: inline-block;
-	font-weight: 600;
-	margin-bottom: 5px;
-}
-
-.required::after {
-	content: ' *';
-	color: #d24d57;
-}
-
-input {
-	width: 100%;
-	padding: 5px 15px;
-	height: 47px;
-}
-
-// end of FORM
-
-.right-panel {
+.panel-2 {
+	width: 33.3%;
 	display: flex;
 	flex-direction: column;
-	padding: 0 15px;
-	// justify-content: space-between;
-	// align-content: center;
+	// margin-left: 20px;
+	padding-left: 15px;
+	// order: 1;
 	div {
 		margin-bottom: 25px;
 		a {
@@ -124,4 +75,86 @@ input {
 			}
 		}
 	}
+}
+
+.form-row {
+	display: flex;
+	justify-content: space-between;
+	// margin: 0 -15px 15px -15px;
+	// margin-bottom: 15px;
+	// width: 100%;
+}
+
+.form-group {
+	display: flex;
+	flex-direction: column;
+	padding: 0 15px;
+	// margin-bottom: 15px;
+	width: 50%;
+	margin: 0 -15px;
+	// min-width: 33px;
+}
+
+input,
+label,
+textarea {
+	// display: block;
+	width: 100%;
+	margin-bottom: 15px;
+}
+
+.errorMsg {
+	// margin-top: -15px;
+	margin-bottom: 15px;
+}
+
+.required {
+	// display: block;
+	font-weight: 600;
+	margin-bottom: 5px;
+	&.required::after {
+		content: ' *';
+		color: #d24d57;
+	}
+}
+
+.form-input {
+	width: 100%;
+	padding: 5px 15px;
+	height: 47px;
+}
+
+.message {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	margin-bottom: 15px;
+	textarea {
+		resize: vertical;
+		padding: 5px 15px;
+	}
+}
+
+.enquiry {
+	margin-bottom: 15px;
+	span {
+		margin: 15px 0;
+		font-size: 2em;
+	}
+}
+
+.contact-btn {
+	display: block;
+	width: 155px;
+	height: auto;
+	line-height: 30px;
+	padding: 5px 15px;
+	text-transform: uppercase;
+	font-size: 1.063rem;
+	border-radius: 3px;
+	white-space: normal;
+	color: #fff;
+	background-color: $nm-bg;
+	border-color: $nm-bg;
+	cursor: pointer;
 }
