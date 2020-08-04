@@ -25,10 +25,6 @@
 		}
 	}
 
-	// .mobile-nav {
-	// 	display: none;
-	// }
-
 	.banner-container {
 		.banner-item {
 			width: 970px;
@@ -111,6 +107,27 @@
 			}
 		}
 	}
+
+	// CONTACT PAGE
+
+	.container {
+		width: 970px;
+	}
+
+	.flex-row {
+		width: 970px;
+	}
+	.panel-1 {
+		width: 100%;
+		order: 2;
+	}
+	.panel-2 {
+		width: 100%;
+		order: 1;
+		padding-left: 0;
+	}
+
+	// end of CONTACT PAGE
 }
 
 @media (max-width: 991px) {
@@ -199,6 +216,27 @@
 			}
 		}
 	}
+
+	// CONTACT PAGE
+	.container {
+		width: 750px;
+	}
+
+	.flex-row {
+		width: 750px;
+	}
+
+	.form-row {
+		flex-direction: column;
+	}
+
+	.form-group {
+		width: 100%;
+		margin: 0px;
+		padding: 0px;
+	}
+
+	// end of CONTACT PAGE
 }
 
 @media (max-width: 767px) {
@@ -275,8 +313,16 @@
 	.accred-container {
 		display: none;
 	}
-}
 
-// .mobile-nav {
-// 	display: flex;
-// }
+	// CONTACT PAGE
+
+	.container {
+		width: 100%;
+	}
+
+	.flex-row {
+		width: 100%;
+	}
+
+	// end of CONTACT PAGE
+}
